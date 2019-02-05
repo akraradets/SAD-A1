@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :subscribers
   root to: 'newsletters#index'
   resources :newsletters
