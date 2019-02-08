@@ -1,24 +1,33 @@
-# README
+REPORT
+======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Title**: CSIM Newsletter
 
-Things you may want to cover:
+**Team Member & Role**
+- 118169 Mr. Solipuram Rakesh Reddy: Takes care of the Posts module
+- 120224 Mr. Akraradet Sinsamersuk:  Takes care of the Newsletters module
+- 120687 Mr. Sai Mahesh Paruchuri:   Takes care of the Subscribers module
 
-* Ruby version
+**About MVC**
 
-* System dependencies
+MVC(Model View Controller) is a type of software architecture trying to separate code into 3 sections.
+- The model takes care of manipulating data from the database, normally, using ActiveRecord philosophy.
+- The view takes care of rendering information and providing a channel for the user to interact with.
+- The controller takes care of most of the logic of your application.
 
-* Configuration
+We choose MVC when we have to implement an application that needs UI because it provides you the View section where other architects don't.
 
-* Database creation
+**About the project**
 
-* Database initialization
+The main goal of this project is to replace the CSIM news board with an online one where the student can subscribe and get an email notification whenever there is new news.
+- The Newsletters module is where the secretary posts new news.
+- The Subscribes module is where students subscribe for email notification.
+- The Posts module is where students post their own news.
 
-* How to run the test suite
+We only used "rails generate scaffold <>" to generate a completed CRUD module just because we needed basic actions for our project (Create, Read, Update, Delete). We still need to find a way to send an email and a way to handle user better than just scaffold (Hint: device). 
 
-* Services (job queues, cache servers, search engines, etc.)
+All in all, for small up to medium size project, we think MVC works very well.
 
-* Deployment instructions
+**What we learned**
 
-* ...
+Separate works into different modules help us to work independently but we lose the consistency between each view.
